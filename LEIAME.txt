@@ -1,0 +1,7 @@
+[ COMPILAÇÃO ]
+
+Dentro da pasta src, utilize o comando "javac *.java"
+
+[ EXECUÇÃO ]
+
+Dentro da pasta src, utilize o comando "java Pong"
