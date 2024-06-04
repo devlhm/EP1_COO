@@ -50,10 +50,6 @@ public class Ball {
 		double dirLength = Math.sqrt((randX*randX) + (randY*randY));
 		dirx = randX/dirLength;
 		diry = randY/dirLength;
-		diry = -1;
-
-		System.out.println(dirx);
-		System.out.println(diry);
 	}
 
 
@@ -88,7 +84,9 @@ public class Ball {
 		Random rand = new Random();
 		
 		dirx *= -1;
-		diry = rand.nextDouble() * 2 - 1;
+		double randY = rand.nextDouble() * 2 - 1;
+		double dirLength = Math.sqrt((dirx*dirx) + (randY*randY));
+		diry = randY / dirLength;
 	}
 
 	/**
